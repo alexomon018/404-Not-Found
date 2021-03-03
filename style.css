@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --font-inconsolata: 'Inconsolata', monospace;
+  --font-space-mono: 'Space Mono', monospace;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+p {
+  width: 381px;
+  font-family: 'Space Mono';
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+}
+
+h3 {
+  font-family: var(--font-inconsolata);
+  font-size: 24px;
+  margin-top: 40px;
+  margin-left: 77px;
+}
+
+img {
+  width: 539px;
+  height: 447px;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+button {
+  font-family: 'Space Mono';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 24px 43px;
+  color: #fff;
+  background: #333333;
+  border: 0;
+  cursor: pointer;
+}
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container__left {
+  flex: 1;
+}
+.main__container__right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  color: #bdbdbd;
+  font-weight: 300;
+  margin-top: 90px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+a {
+  color: #bdbdbd;
+  font-weight: 700;
+}
+@media screen and (max-width: 960px) {
+  header > h3 {
+    position: relative;
+    top: 15px;
+    right: 60px;
+  }
+  img {
+    width: 290px;
+    height: 250px;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .main__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__container__right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__container__right > h1 {
+    padding-left: 12%;
+  }
+  .main__container__right > p {
+    text-align: center;
+  }
+  .main__container__right > button {
+    margin-bottom: 50px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+}
